@@ -35,3 +35,13 @@ export default function Nav() {
   );
 }
 
+const navbar = document.querySelector('.top-nav');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 0) {
+    navbar.classList.add('solid');
+  } else {
+    navbar.classList.remove('solid');
+  }
+});
+

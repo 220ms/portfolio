@@ -14,7 +14,7 @@ export default function Projects() {
     })
   return (
     <div className="Projects">
-        <h1 className="center">My Projects</h1>
+        <h1>My Projects</h1>
         <div className="projects-container">
         {projectsData}
         </div>
