@@ -1,5 +1,5 @@
 import '../css/style.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Nav() {
   const [showMenu, setShowMenu] = useState(false);
@@ -8,8 +8,21 @@ export default function Nav() {
     setShowMenu(!showMenu);
   };
 
+  // use the useEffect to tell react to perform this operation when the component is loaded.
+  useEffect(() => {
+    const navbar = document.getElementById('top-nav')
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 0) {
+        navbar.classList.add('solid');
+      } else {
+        navbar.classList.remove('solid');
+      }
+    });
+  }, []);
+
+
   return (
-    <div className="top-nav">
+    <div className="top-nav" id="top-nav">
       <div>
         <h1 className="heading"><a href="#">Port<span className="blue">folio</span></a></h1>
       </div>
@@ -35,13 +48,6 @@ export default function Nav() {
   );
 }
 
-const navbar = document.querySelector('.top-nav');
 
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 0) {
-    navbar.classList.add('solid');
-  } else {
-    navbar.classList.remove('solid');
-  }
-});
+
 

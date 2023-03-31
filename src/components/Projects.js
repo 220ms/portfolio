@@ -10,8 +10,12 @@ export default function Projects() {
             description = {project.description}
             technologies = {project.technologies}
             link = {project.link}
+            id = {project.id}
+            key = {project.id}
         />
     })
+
+
   return (
     <div className="Projects">
         <h1>My Projects</h1>
@@ -23,3 +27,4 @@ export default function Projects() {
     
   );
 }
+
