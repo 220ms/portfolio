@@ -39,9 +39,8 @@ export default function Nav() {
         <img src={require("../images/close-window.png")} alt="Menu" />
         </div>
         <a href="#" onClick={toggleMenu}>Home</a>
-        <a href="#" onClick={toggleMenu}>About Me</a>
-        <a href="#" onClick={toggleMenu}>Projects</a>
-        <a href="#" onClick={toggleMenu}>Contact Me</a>
+        <a href="#about" onClick={toggleMenu}>About Me</a>
+        <a href="#projects" onClick={toggleMenu}>Projects</a>
       </div>
     </div>
   );
