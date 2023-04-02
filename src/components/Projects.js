@@ -17,7 +17,7 @@ export default function Projects() {
 
 
   return (
-    <div className="Projects">
+    <div className="Projects" id="projects">
         <h1>My Projects</h1>
         <div className="projects-container">
         {projectsData}

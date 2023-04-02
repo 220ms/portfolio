@@ -28,9 +28,8 @@ export default function Nav() {
       </div>
       <div className="link-list">
         <a href="#">Home</a>
-        <a href="#">About Me</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact Me</a>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
       </div>
       <div className="burger-icon" onClick={toggleMenu}>
         <img src={require("../images/burger-icon.png")} alt="Menu" />

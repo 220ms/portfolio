@@ -9,7 +9,6 @@ export default function ProjectCard(props) {
     const closeBtn = document.getElementById('close-' + props.id);
 
     const openCard = () => {
-      console.log(`Clicked ${props.description}`);
       popup.style.display = 'flex';
     }
 
@@ -27,7 +26,6 @@ export default function ProjectCard(props) {
     };
   }, [props.title,props.id]);
 
-
   return (
     <div>
       <div className="project-card" id={props.id}>
@@ -38,6 +36,14 @@ export default function ProjectCard(props) {
         <div className="popup-content">
           <h2>{props.title}</h2>
           <p>{props.description}</p>
+          <h3>Learning Areas</h3>
+            {props.technologies.map(function(item) {
+              return (
+                <p>{item}</p>
+              );
+            })}
+          <a href={props.link} target='_blank' rel="noreferrer">Github Repo</a>
+          
           <button className="card-close-btn" id={'close-' + props.id}>Close</button>
         </div>
       </div>

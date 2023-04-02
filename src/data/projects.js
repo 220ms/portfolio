@@ -2,33 +2,32 @@ const Projects = [
     {
         image: 'compare.png',
         title: 'Legal Hackathon',
-        description: `In this project we were tasked with creating a product that solved a problem in the legal sector and did so by using AI.
-         So for this hackathon we build up an application that leverage Pythons artifical intelligence libraries like opencv to compare and contrast images as well as text to the Australian national trademark registry.
-         In doing so we looked at the shapes present in the image, the text on the image as well as the colors contained in the image. From this data we were then able to pass this data into a neural network which then evaluated
-         the uploaded image in those 3 categories and produced a likelihood score that the image would be copyright free and didn't conflict with any previously filed material. In this project I mainly focused on the UI design 
-         and creating this using the pygame module in python. In the end we ended up winning the hackathon with our project idea and prototype.`,
+        description: `My team for the Monash Legal Hackathon created an AI-based application to solve a legal sector problem. 
+        we used Python libraries, including opencv, to compare images and text to the Australian national trademark registry.
+         The data was passed through a neural network to produce a score for copyright infringement. 
+         I focused on UI design using the pygame module and in the end, we won the hackathon.`,
         technologies: ['Python','AI','Pygame'],
         link: 'https://github.com/220ms/Hackathon',
         id: 'Card1'
     },
     {
-        image: 'about-me.png',
-        title: 'second test',
-        description: `This is a test`,
-        technologies: ['Python','AI','Pygame'],
-        link: 'https://github.com/220ms/Hackathon',
+        image: 'sorted-files.png',
+        title: 'Classify Images',
+        description: `I created this code to solve a problem my parents had when they came back from their holiday in New Zealand.
+         They wanted to upload to the cloud but they had too many images in the same folder and the folder size exceeded the upload 
+         capacity for OneDrive. So I decided to come up with a solution that classifies images based on the date metadata contained 
+         within the NEF image files and puts them into date-based directories.`,
+        technologies: ['Python','Metadata'],
+        link: 'https://github.com/220ms/sort-image-by-date',
         id: 'Card2'
     },
     {
-        image: 'hero.png',
-        title: 'Legal Hackathon',
-        description: `In this project we were tasked with creating a product that solved a problem in the legal sector and did so by using AI.
-         So for this hackathon we build up an application that leverage Pythons artifical intelligence libraries like opencv to compare and contrast images as well as text to the Australian national trademark registry.
-         In doing so we looked at the shapes present in the image, the text on the image as well as the colors contained in the image. From this data we were then able to pass this data into a neural network which then evaluated
-         the uploaded image in those 3 categories and produced a likelihood score that the image would be copyright free and didn't conflict with any previously filed material. In this project I mainly focused on the UI design 
-         and creating this using the pygame module in python. In the end we ended up winning the hackathon with our project idea and prototype.`,
-        technologies: ['Python','AI','Pygame'],
-        link: 'https://github.com/220ms/Hackathon',
+        image: 'ecommerce.png',
+        title: 'E-Commerce site',
+        description: `I developed an E-Commerce website using CakePHP for my final year project. We created a product management system for easy purchasing and added a secure payment gateway through PayPal.
+         Despite the challenges, my team delivered a functional site and gained valuable experience in web development and project management.`,
+        technologies: ['CakePHP','Web development','SQL','Project Management'],
+        link: 'https://github.com/220ms/JJCrackers-Lavosh',
         id: 'Card3'
     }
 ]

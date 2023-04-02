@@ -2,7 +2,7 @@ import '../css/style.css';
 
 export default function About() {
   return (
-    <div className="about-me-container">
+    <div className="about-me-container" id="about">
       <img src={require("../images/about-me.png")} alt="Menu" />
       <div className="about-me-content">
         <h1>Get to Know Me</h1>
