@@ -6,7 +6,7 @@ export default function About() {
       <img src={require("../images/about-me.png")} alt="Menu" />
       <div className="about-me-content">
         <h1>Get to Know Me</h1>
-        <p>Hi, my name is Matt Hicks and I'm a graduating IT student from Monash University. I have a passion for building different types of applications ranging from hobby scripts all the way through to full web applications. In my spare time, you'll often find me hitting the pavement for a run, as I'm currently training towards running a 10km race in under an hour. With each passing day, I'm excited to continue learning and growing as a developer, while also exploring new avenues in health and fitness.</p>
+        <p>Hi, my name is Matt Hicks, and I am a Software Developer with 9 months of professional experience in building web applications and integrating innovative solutions. I enjoy crafting applications that range from personal passion projects to full-scale web platforms. In my spare time, you'll often find me running as I work towards new personal bests, including running a half marathon. I'm passionate about continuously improving as a developer while also embracing challenges in health and fitness.</p>
       </div>
     </div>
   );
